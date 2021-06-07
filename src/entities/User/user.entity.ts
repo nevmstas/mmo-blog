@@ -6,7 +6,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 import { ObjectType, Field } from '@nestjs/graphql';
-import { Race, Role } from 'src/types/enums/user';
+import { Race, Role, UserStatus } from 'src/types/enums/user';
 
 @ObjectType()
 @Entity()
@@ -51,6 +51,8 @@ export class UserEnity {
   })
   email: string;
 
+
+
   @Field()
   @Column()
   @CreateDateColumn()
@@ -60,4 +62,12 @@ export class UserEnity {
   @Column()
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @Field()
+  @Column({
+    type: 'enum',
+    enum: UserStatus,
+    default: UserStatus.IN_PROCESS
+  })
+  status: UserStatus
 }
