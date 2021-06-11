@@ -8,5 +8,6 @@ export const theme = {
       sun: '#ffe566',
       wood: '#9d6b53',
       plants: '#aacc00',
+      sky: '#CCFFFF'
   }
 };

@@ -1,13 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WorldBackGroundWrapper from './styles/WorldBackground/WorldBackground';
-
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { Global, jsx, css, Theme } from '@emotion/react';
+import { WorldBackground } from './styles/body/WorldBackground';
+import WorldBack from './styles/WorldBackgroundWrapper'
 function App() {
   return (
-    <WorldBackGroundWrapper>
-      <div className="App">123</div>
-    </WorldBackGroundWrapper>
+    <div className="App">
+      <Global
+        styles={(theme: Theme) => css`
+          * {
+            font-family: 'Karla', sans-serif;
+          }
+          ${WorldBackground(theme)}
+        `}
+      />
+    <WorldBack />
+    </div>
   );
 }
 

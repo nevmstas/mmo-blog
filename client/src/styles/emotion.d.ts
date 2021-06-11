@@ -11,6 +11,7 @@ declare module '@emotion/react' {
       sun: string;
       wood: string;
       plants: string;
+      sky: string;
     };
   }
 }
