@@ -3,7 +3,8 @@ import React, { FC } from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
-import SunWithRipple from '../../components/world/Sun/SunComponent';
+import SunWithRipple from '../../components/world/Sun';
+import Water from  '../../components/world/Water'
 
 const LandContainer = styled.div`
   position: absolute;
@@ -44,13 +45,13 @@ const SecondLand = styled.div`
   background-color: ${(props) => props.theme.world.land};
 `;
 
-const Water = styled.div`
-  position: absolute;
-  width: 100%;
-  background-color: ${(props) => props.theme.world.water};
-  height: 100px;
-  bottom: 0;
-`;
+// const Water = styled.div`
+//   position: absolute;
+//   width: 100%;
+//   background-color: ${(props) => props.theme.world.water};
+//   height: 100px;
+//   bottom: 0;
+// `;
 //!!!disable scrolling
 
 const WorldBackgroundWrapper: FC = ({ children }) => {

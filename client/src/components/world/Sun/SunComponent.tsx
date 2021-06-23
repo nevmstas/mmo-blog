@@ -22,7 +22,7 @@ const circle = () => css`
   position: absolute;
   border-radius: 50%;
   background: #ffe566;
-  animation: ripple 15s infinite;
+  /* animation: ripple 15s infinite; */
   box-shadow: 0px 0px 1px 0px #508fb9;
   animation: ${bounce} 15s infinite;
 `;
