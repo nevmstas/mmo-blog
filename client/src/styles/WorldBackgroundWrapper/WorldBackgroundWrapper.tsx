@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 import SunWithRipple from '../../components/world/Sun';
-import Water from  '../../components/world/Water'
+import Water from '../../components/world/Water';
 
 const LandContainer = styled.div`
   position: absolute;

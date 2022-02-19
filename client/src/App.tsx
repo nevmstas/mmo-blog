@@ -5,7 +5,7 @@ import './App.css';
 /** @jsx jsx */
 import { Global, jsx, css, Theme } from '@emotion/react';
 import { WorldBackground } from './styles/body/WorldBackground';
-import WorldBack from './styles/WorldBackgroundWrapper'
+import WorldBack from './styles/WorldBackgroundWrapper';
 import NameForm from './screens/auth/Name';
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           ${WorldBackground(theme)}
         `}
       />
-    <WorldBack />
-    <NameForm />
+      <WorldBack />
+      <NameForm />
     </div>
   );
 }
